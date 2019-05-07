@@ -157,7 +157,7 @@ ___
  6. Open file of your choice.
  7. Add a breakpoint to a line in your code.
    1. Red dot will not appear (editor bug), please view Breakpoints panel to ensure breakpoint exists.
- 8. Start the DayZ server and client by pressing Ctrl+1 inside the Script Editor.r
+ 8. Start the DayZ server and client by pressing Ctrl+1 from Workbench or Script Editor windows.
    1. Script Editor will automatically connect to the Server or Client once they are started.  You can change which in "Debug" in top menu.
  9. Make code changes and Recompile File on Host (Ctrl+F7).
  10 Or, restart client or server using Run shortcuts under "Plugins" in top menu.
