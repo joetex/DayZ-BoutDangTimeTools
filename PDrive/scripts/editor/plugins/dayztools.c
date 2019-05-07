@@ -16,17 +16,29 @@ class DayZTool: WorkbenchPlugin
 	}
 };
 
-[WorkbenchPluginAttribute("Restart Workbench", "Just for testing", "ctrl+0", "", {"ScriptEditor"})]
-class RestartWorkbench: DayZTool
+[WorkbenchPluginAttribute("DayZ Run Client", "Just for testing", "ctrl+3", "", {"ScriptEditor"})]
+class RunDayzClientTool: DayZTool
 {
-	[Attribute("P:/StartWorkbench.bat", "fileeditbox", "Path to missions dir", "")]
-	string RestartCmd;
+	[Attribute("P:/StartDebugClient.bat", "fileeditbox", "Path to missions dir", "")]
+	string RunClientCmd;
 	
 	override void Run()
 	{
-		RunCustomCommand(RestartCmd);
+		RunCustomCommand(RunClientCmd);
 	}
-};
+}
+
+[WorkbenchPluginAttribute("DayZ Run Server", "Just for testing", "ctrl+4", "", {"ScriptEditor"})]
+class RunDayzServerTool: DayZTool
+{
+	[Attribute("P:/StartDebugServer.bat", "fileeditbox", "Path to missions dir", "")]
+	string RunServerCmd;
+	
+	override void Run()
+	{
+		RunCustomCommand(RunServerCmd);
+	}
+}
 
 [WorkbenchPluginAttribute("DayZ Restart Client/Server", "Just for testing", "ctrl+1", "", {"ScriptEditor"})]
 class StartClientServerDayzTool: DayZTool
@@ -52,26 +64,31 @@ class KillClientServerDayzTool: DayZTool
 	}
 }
 
-[WorkbenchPluginAttribute("DayZ Run Client", "Just for testing", "ctrl+3", "", {"ScriptEditor"})]
-class RunDayzClientTool: DayZTool
-{
-	[Attribute("P:/StartDebugClient.bat", "fileeditbox", "Path to missions dir", "")]
-	string RunClientCmd;
-	
-	override void Run()
-	{
-		RunCustomCommand(RunClientCmd);
-	}
-}
 
-[WorkbenchPluginAttribute("DayZ Run Server", "Just for testing", "ctrl+4", "", {"ScriptEditor"})]
-class RunDayzServerTool: DayZTool
+
+
+
+[WorkbenchPluginAttribute("Restart Workbench", "Just for testing", "ctrl+0", "", {"ScriptEditor"})]
+class RestartWorkbench: DayZTool
 {
-	[Attribute("P:/StartDebugServer.bat", "fileeditbox", "Path to missions dir", "")]
-	string RunServerCmd;
+	[Attribute("P:/StartWorkbench.bat", "fileeditbox", "Path to missions dir", "")]
+	string RestartCmd;
 	
 	override void Run()
 	{
-		RunCustomCommand(RunServerCmd);
+		RunCustomCommand(RestartCmd);
 	}
-}
+};
+
+[WorkbenchPluginAttribute("Copy Game/Server Files", "Just for testing", "ctrl+9", "", {"ScriptEditor"})]
+class CopyGameFilesDayzTool: DayZTool
+{
+	[Attribute("P:/CopyGameFiles.bat", "fileeditbox", "Path to missions dir", "")]
+	string CopyGameCmd;
+	
+	override void Run()
+	{
+		RunCustomCommand(CopyGameCmd);
+	}
+};
+
