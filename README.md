@@ -2,7 +2,7 @@
 # DayZ-BoutDangTimeTools
 Scripting Environment for DayZ using Workbench and Script be Editor
 
-#### Table of Contents
+## Table of Contents
  - [Reasons to Use](#reasons)
  - [Install Essentials](#install)
  - [Setup P:/ Drive](#pdrive)
