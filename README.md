@@ -1,5 +1,5 @@
 # DayZ-BoutDangTimeTools
-Scripting Environment for DayZ using Workbench and Script Editor
+Scripting Environment for DayZ using Workbench and Script be Editor
 
 ### Reasons to Use:
  1. Single directory for Client, Server, and Mods at P:/MultiplayerGame/
@@ -80,4 +80,7 @@ Scripting Environment for DayZ using Workbench and Script Editor
   #### StartDebugAll.bat, StopDebugAll.bat, StartDebugClient.bat, StartDebugServer.bat
   These files will start and stop the DayZ game and server.  Running the Start scripts again will kill the existing game or server and start them again.  These are used in the Script Editor as keyboard shortcuts.
   
-####
+#### scripts/editor/plugins/dayztools.c
+Defines the keyboard shortcuts for Script Editor to quickly manage starting and stopping the DayZ game and server.  As well restarting workbench.
+
+
