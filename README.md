@@ -13,7 +13,7 @@ Scripting Environment for DayZ using Workbench and Script be Editor
    - [Start/Stop for Game and Server (.bat files)](#startstop)
    
  
-
+___
 
 ### Reasons to Use:
  1. Single directory for Client, Server, and Mods at P:/MultiplayerGame/
@@ -33,6 +33,8 @@ Scripting Environment for DayZ using Workbench and Script be Editor
 
 <a name="setup"/>
 
+___
+
 ## Setup Environment
 
 <a name="install"/>
@@ -42,6 +44,8 @@ Scripting Environment for DayZ using Workbench and Script be Editor
  2. Install DayZ Server from Steam Tools
  3. Install DayZ Tools from Steam Tools
  4. Download this repository as a .zip (will be extracted to P:/)
+
+___
 
 <a name="pdrive"/>
 
@@ -56,6 +60,8 @@ Scripting Environment for DayZ using Workbench and Script be Editor
  3. Click "Tools -> Mount Drive P"
  4. Click Extract Game Data
    1. Note: Unpacks all the game files of about 14 GB.
+
+___
 
 <a name="setupbdt"/>
 
@@ -84,7 +90,9 @@ Scripting Environment for DayZ using Workbench and Script be Editor
    2. Note: Only packed / built mods should be named with @ in front.
  4. Edit the paths for Workbench, DayZ Server, and DayZ Client folders.
    1. Workbench folder is in DayZ Tools installation directory, in Bin folder
-    
+
+___
+
 <a name="bdttools"/>
 
 ### Understanding BoutDangTime Tools
@@ -98,7 +106,7 @@ Scripting Environment for DayZ using Workbench and Script be Editor
 <a name="startworkbench"/>
 
 #### StartWorkbench.bat
-This tool performs several actions:
+> This tool performs several actions:
 >  1. Kill any open Workbench application.
 >  2. Generate mods.sproj with all the *.c files from our P:/MultiplayerGame
 >  3. Generate dayz.ssln which references mods.sproj.  Built using dayz.ssln.template file.
@@ -109,7 +117,7 @@ This tool performs several actions:
  <a name="copygamefiles"/>
  
 #### CopyGameFiles.bat
-Warning: Duplicates DayZ game files (approx 14 GB)
+> Warning: Duplicates DayZ game files (approx 14 GB)
 > It's important to sandbox your DayZ game directory, so your normal play is not affected.  This will move all the required files to the P:/MultiplayerGame directory.  If there is an update to DayZ Client or Server, run this tool to copy only the modified files.
   
  <a name="startstop"/>
