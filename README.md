@@ -97,6 +97,8 @@ ___
 
 ### Understanding BoutDangTime Tools
 
+Simply double click any of these files to run them.  A shortcut for StartWorkbench.bat is also available to use.  These tools are also runnable from the Script Editor. 
+
 <a name="usersettings"/>
 
 #### UserSettings_EDIT_ME.bat
