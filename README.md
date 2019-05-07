@@ -150,7 +150,7 @@ ___
    1. Modify MODS variable to add your mod name, for example: `SET "MODS=TestMod"`
    2. Note: Do not use @ for your unpacked mod folder name.  Only use @ in name for packed mods.
  3. Open Workbench using StartWorkbench.bat that should be at P:/StartWorkbench.bat
-   1. This will automatically load directories, &ast;.c, &ast;.layout, and &ast;.styles files properly for game, server and workbench.
+   1. This will automatically load &ast;.c, &ast;.layout, &ast;.styles files, and filesystem properly for game, server and workbench.
  4. Open Script Editor from top menu Editors -> Script Editor.
  5. In Projects panel, scroll down to "mods" top level folder.
    1. All *.c files in your P:/MultiplayerGame/ directory will be listed here.
