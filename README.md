@@ -72,6 +72,7 @@ ___
 ### Setup BoutDangTime Tools
 
  1. Extract PDrive folder from *.zip file of this repository to P:/
+   1. The .bat files must be in P:/ for Script Editor to call.
  2. Edit 'UserSettings_EDIT_ME.bat'
    1. Right-click file and choose "Edit".
 ```
