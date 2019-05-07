@@ -16,6 +16,18 @@ class DayZTool: WorkbenchPlugin
 	}
 };
 
+[WorkbenchPluginAttribute("Restart Workbench", "Just for testing", "ctrl+0", "", {"ScriptEditor"})]
+class RestartWorkbench: DayZTool
+{
+	[Attribute("P:/StartWorkbench.bat", "fileeditbox", "Path to missions dir", "")]
+	string RestartCmd;
+	
+	override void Run()
+	{
+		RunCustomCommand(RestartCmd);
+	}
+};
+
 [WorkbenchPluginAttribute("DayZ Restart Client/Server", "Just for testing", "ctrl+1", "", {"ScriptEditor"})]
 class StartClientServerDayzTool: DayZTool
 {

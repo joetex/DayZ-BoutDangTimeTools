@@ -8,6 +8,12 @@ CALL UserSettings_EDIT_ME.bat
 
 
 REM "==================================================="
+REM "Kill workbench, if exists"
+REM "==================================================="
+tasklist | find /i "%ExecutableWorkbench%">nul && Taskkill /F /IM  "%ExecutableWorkbench%"
+
+
+REM "==================================================="
 REM "Generate mods.sproj from game folder's *.c files"
 REM "==================================================="
 echo Generating mods.sproj file from %PathGame% directory *.c files
@@ -72,6 +78,34 @@ for /F "delims=" %%a in (%PathWorkDrive%/%ProjectGameFile%.template) do (
 			cd /D !mymod!
 			FOR /D /r  %%G in (1_core) do (
 				@if exist "%%G/"  (
+					set mymod=%%G
+					set mymod=!mymod:\=/!
+					set mymod=!mymod:%PathGame%/=!
+					@echo 				"!mymod!">>!destination!
+				)
+			)
+		)
+    ) else if not x"!line:$IMAGE_SET=!"==x"!line!" (
+    	echo "Processing IMAGE_SET..."
+    	for  %%i in (%mymods%) do (
+			set mymod=%%i
+			cd /D !mymod!
+			FOR /r %%G in (*.imageset) do (
+				@if exist "%%G"  (
+					set mymod=%%G
+					set mymod=!mymod:\=/!
+					set mymod=!mymod:%PathGame%/=!
+					@echo 				"!mymod!">>!destination!
+				)
+			)
+		)
+    ) else if not x"!line:$WIDGET_STYLE=!"==x"!line!" (
+    	echo "Processing WIDGET_STYLE..."
+    	for  %%i in (%mymods%) do (
+			set mymod=%%i
+			cd /D !mymod!
+			FOR /r %%G in (*.styles) do (
+				@if exist "%%G"  (
 					set mymod=%%G
 					set mymod=!mymod:\=/!
 					set mymod=!mymod:%PathGame%/=!
@@ -148,10 +182,7 @@ xcopy "%destination%" "%ProjectGameFilePath%/%ProjectGameFile%*" /D /Y /F
 xcopy "%destination%" "%PathGame%/%ProjectGameFile%*" /D /Y /F
 REM del "%destination%" /s /f /q
 
-REM "==================================================="
-REM "Kill workbench, if exists"
-REM "==================================================="
-tasklist | find /i "%ExecutableWorkbench%">nul && Taskkill /F /IM  "%ExecutableWorkbench%"
+
 
 TIMEOUT /T 1
 

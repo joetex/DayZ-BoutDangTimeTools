@@ -2,9 +2,10 @@
 
 REM "==================================================="
 REM "DayZ Mods to auto-load in Client, Server, and Workbench"
+REM "Use REM to comment and save different setups"
 REM "==================================================="
+REM SET "MODS=CF;VanillaPPMap"
 SET "MODS=TestMod"
-
 
 REM "==================================================="
 REM "DayZ Development Environment Directories"

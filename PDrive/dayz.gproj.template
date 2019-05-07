@@ -27,10 +27,12 @@ $GAME_DIR
 	  "gui/imagesets/playstation_buttons.imageset"
 	  "gui/imagesets/selection.imageset"
 	  "gui/imagesets/console_toolbar.imageset"
+$IMAGE_SET
 	 }
 	 widgetStyles {
 	  "gui/looknfeel/dayzwidgets.styles"
 	  "gui/looknfeel/widgets.styles"
+$WIDGET_STYLE
 	 }
 	 ScriptModules {
 		ScriptModulePathClass {
