@@ -92,34 +92,34 @@ Scripting Environment for DayZ using Workbench and Script be Editor
 <a name="usersettings"/>
 
 #### UserSettings_EDIT_ME.bat
-Define the mods to load and the DayZ Game, Server, and Tools (Workbench) directories.
-To comment, use REM at the start of the line.
+> Define the mods to load and the DayZ Game, Server, and Tools (Workbench) directories.
+> To comment, use REM at the start of the line.
 
 <a name="startworkbench"/>
 
 #### StartWorkbench.bat
 This tool performs several actions:
- 1. Kill any open Workbench application.
- 2. Generate mods.sproj with all the *.c files from our P:/MultiplayerGame
- 3. Generate dayz.ssln which references mods.sproj.  Built using dayz.ssln.template file.
- 4. Generate dayz.gproj which references unpacked mod files and our game directory. Built using dayz.gproj.template file.
-   1. This file is copied to Workbench (PathWorkbench) folder and Game folder (P:/MultiplayerGame)
- 5. Opens Workbench with -mod pointing to each mod's full path.
+>  1. Kill any open Workbench application.
+>  2. Generate mods.sproj with all the *.c files from our P:/MultiplayerGame
+>  3. Generate dayz.ssln which references mods.sproj.  Built using dayz.ssln.template file.
+>  4. Generate dayz.gproj which references unpacked mod files and our game directory. Built using dayz.gproj.template file.
+>    1. This file is copied to Workbench (PathWorkbench) folder and Game folder (P:/MultiplayerGame)
+>  5. Opens Workbench with -mod pointing to each mod's full path.
  
  <a name="copygamefiles"/>
  
 #### CopyGameFiles.bat
 Warning: Duplicates DayZ game files (approx 14 GB)
-It's important to sandbox your DayZ game directory, so your normal play is not affected.  This will move all the required files to the P:/MultiplayerGame directory.  If there is an update to DayZ Client or Server, run this tool to copy only the modified files.
+> It's important to sandbox your DayZ game directory, so your normal play is not affected.  This will move all the required files to the P:/MultiplayerGame directory.  If there is an update to DayZ Client or Server, run this tool to copy only the modified files.
   
  <a name="startstop"/>
  
 #### StartDebugAll.bat, StopDebugAll.bat, StartDebugClient.bat, StartDebugServer.bat
-These files will start and stop the DayZ game and server.  Running the Start scripts again will kill the existing game or server and start them again.  These are used in the Script Editor as keyboard shortcuts.
+> These files will start and stop the DayZ game and server.  Running the Start scripts again will kill the existing game or server and start them again.  These are used in the Script Editor as keyboard shortcuts.
   
   <a name="dayztools"/>
   
 #### scripts/editor/plugins/dayztools.c
-Defines the keyboard shortcuts for Script Editor to quickly manage starting and stopping the DayZ game and server.  As well restarting workbench.
+> Defines the keyboard shortcuts for Script Editor to quickly manage starting and stopping the DayZ game and server.  As well restarting workbench.
 
 
