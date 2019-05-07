@@ -25,7 +25,8 @@ ___
  2. Define -mod in one line for Client, Server, and Workbench to be setup automatically. 
  3. Auto-generate dayz.gproj, dayz.ssln, and mods.sproj when starting workbench (.bat file). 
  4. No symlinks!
- 5. Script Editor features:
+ 5. Made for unpacked mod scripting.
+ 6. Script Editor features:
     1. New mods folder to easily modify your code in one spot.
     2. Add breakpoints directly from new mods directory files (red dots are bugged, but it works!). 
     3. Fixed Keyboard Shortcuts:
