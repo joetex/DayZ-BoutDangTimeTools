@@ -118,6 +118,7 @@ ___
  
 #### CopyGameFiles.bat
 > Warning: Duplicates DayZ game files (approx 14 GB)
+
 > It's important to sandbox your DayZ game directory, so your normal play is not affected.  This will move all the required files to the P:/MultiplayerGame directory.  If there is an update to DayZ Client or Server, run this tool to copy only the modified files.
   
  <a name="startstop"/>
