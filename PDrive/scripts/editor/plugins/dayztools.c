@@ -16,7 +16,7 @@ class DayZTool: WorkbenchPlugin
 	}
 };
 
-[WorkbenchPluginAttribute("DayZ Run Client", "Just for testing", "ctrl+3", "", {"ScriptEditor"})]
+[WorkbenchPluginAttribute("DayZ Run Client", "Just for testing", "ctrl+3", "", {"ScriptEditor", "ResourceManager"})]
 class RunDayzClientTool: DayZTool
 {
 	[Attribute("P:/StartDebugClient.bat", "fileeditbox", "Path to missions dir", "")]
@@ -28,7 +28,7 @@ class RunDayzClientTool: DayZTool
 	}
 }
 
-[WorkbenchPluginAttribute("DayZ Run Server", "Just for testing", "ctrl+4", "", {"ScriptEditor"})]
+[WorkbenchPluginAttribute("DayZ Run Server", "Just for testing", "ctrl+4", "", {"ScriptEditor", "ResourceManager"})]
 class RunDayzServerTool: DayZTool
 {
 	[Attribute("P:/StartDebugServer.bat", "fileeditbox", "Path to missions dir", "")]
@@ -40,7 +40,7 @@ class RunDayzServerTool: DayZTool
 	}
 }
 
-[WorkbenchPluginAttribute("DayZ Restart Client/Server", "Just for testing", "ctrl+1", "", {"ScriptEditor"})]
+[WorkbenchPluginAttribute("DayZ Restart Client/Server", "Just for testing", "ctrl+1", "", {"ScriptEditor", "ResourceManager"})]
 class StartClientServerDayzTool: DayZTool
 {
 	[Attribute("P:/StartDebugAll.bat", "fileeditbox", "Path to missions dir", "")]
@@ -52,7 +52,7 @@ class StartClientServerDayzTool: DayZTool
 	}
 }
 
-[WorkbenchPluginAttribute("DayZ Kill Client/Server", "Just for testing", "ctrl+2", "", {"ScriptEditor"})]
+[WorkbenchPluginAttribute("DayZ Kill Client/Server", "Just for testing", "ctrl+2", "", {"ScriptEditor", "ResourceManager"})]
 class KillClientServerDayzTool: DayZTool
 {
 	[Attribute("P:/StopDebugAll.bat", "fileeditbox", "Path to missions dir", "")]
@@ -68,7 +68,7 @@ class KillClientServerDayzTool: DayZTool
 
 
 
-[WorkbenchPluginAttribute("Restart Workbench", "Just for testing", "ctrl+0", "", {"ScriptEditor"})]
+[WorkbenchPluginAttribute("Restart Workbench", "Just for testing", "ctrl+0", "", {"ScriptEditor", "ResourceManager"})]
 class RestartWorkbench: DayZTool
 {
 	[Attribute("P:/StartWorkbench.bat", "fileeditbox", "Path to missions dir", "")]
@@ -80,7 +80,7 @@ class RestartWorkbench: DayZTool
 	}
 };
 
-[WorkbenchPluginAttribute("Copy Game/Server Files", "Just for testing", "ctrl+9", "", {"ScriptEditor"})]
+[WorkbenchPluginAttribute("Copy Game/Server Files", "Just for testing", "ctrl+9", "", {"ScriptEditor", "ResourceManager"})]
 class CopyGameFilesDayzTool: DayZTool
 {
 	[Attribute("P:/CopyGameFiles.bat", "fileeditbox", "Path to missions dir", "")]
