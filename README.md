@@ -3,6 +3,7 @@
 Scripting Environment for DayZ using Workbench and Script be Editor
 
 #### Table of Contents
+ - [Reasons to Use](#reasons)
  - [Install Essentials](#install)
  - [Setup P:/ Drive](#pdrive)
  - [Setup BoutDangTime Tools](#setupbdt)
@@ -11,10 +12,13 @@ Scripting Environment for DayZ using Workbench and Script be Editor
    - [StartWorkbench.bat](#startworkbench)
    - [CopyGameFiles.bat](#copygamefiles)
    - [Start/Stop for Game and Server (.bat files)](#startstop)
-   
+ - [How to Use](#howtouse)
+ - [Gotchas](#gotchas)
  
 ___
 
+<a name="reasons">
+ 
 ### Reasons to Use:
  1. Single directory for Client, Server, and Mods at P:/MultiplayerGame/
    1. Copy or update server and client game files in a single click. (.bat)
@@ -34,8 +38,6 @@ ___
 <a name="setup"/>
 
 ___
-
-## Setup Environment
 
 <a name="install"/>
 
@@ -133,4 +135,33 @@ Simply double click any of these files to run them.  A shortcut for StartWorkben
 #### scripts/editor/plugins/dayztools.c
 > Defines the keyboard shortcuts for Script Editor to quickly manage starting and stopping the DayZ game and server.  As well restarting workbench.
 
+___
 
+<a name="howtouse">
+ 
+## How to Use
+ 1. Copy all your mod folders, packed and unpacked, to P:/MultiplayerGame/
+ 2. Edit UserSettings_EDIT_ME.bat in text editor.
+   1. Modify MODS variable to add your mod name, for example: `SET "MODS=TestMod"`
+   2. Note: Do not use @ for your unpacked mod folder name.  Only use @ in name for packed mods.
+ 3. Open Workbench using StartWorkbench.bat that should be at P:/StartWorkbench.bat
+   1. This will automatically load directories, *.c, *.layout, and *.styles files properly for game, server and workbench.
+ 4. Open Script Editor from top menu Editors -> Script Editor.
+ 5. In Projects panel, scroll down to "mods" top level folder.
+   1. All *.c files in your P:/MultiplayerGame/ directory will be listed here.
+ 6. Open file of your choice.
+ 7. Add a breakpoint to a line in your code.
+   1. Red dot will not appear (editor bug), please view Breakpoints panel to ensure breakpoint exists.
+ 8. Start the DayZ server and client by pressing Ctrl+1 inside the Script Editor.
+ 9. Make code changes and Recompile File on Host (Ctrl+F7).
+ 10 Or, restart client or server using Run shortcuts under "Plugins" in top menu.
+ 
+ --- 
+ 
+<a name="gotchas">
+ 
+## Gotchas
+ 1. If Workbench is already open, adding new files/folders will require restarting workbench (Ctrl+0).
+ 2. Adding breakpoints in opened files under "mods" folder will not show the red dot next to line number.  However, Breakpoints panel will show that the breakpoint exists.  Opening the file through the traditional modules, i.e. Core, Gamelib, Game, World, and Mission will show the red dot properly.
+ 
+ 
