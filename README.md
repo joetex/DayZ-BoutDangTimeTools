@@ -29,7 +29,7 @@ ___
  6. Script Editor features:
     1. New mods folder to easily modify your code in one spot.
     2. Add breakpoints directly from new mods directory files (red dots are bugged, but it works!). 
-    3. Fixed Keyboard Shortcuts:
+ 7. Fixed Keyboard Shortcuts for Workbench and Script Editor windows:
       4. Restart Client and Server (Ctrl+1)
       5. Kill Client and Server (Ctrl+2)
       6. Restart Client Only (Ctrl+3)
