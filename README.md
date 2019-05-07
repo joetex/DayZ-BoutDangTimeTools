@@ -71,7 +71,7 @@ ___
 
 ### Setup BoutDangTime Tools
 
- 1. Extract PDrive folder from *.zip file of this repository to P:/
+ 1. Extract PDrive folder from &ast;.zip file of this repository to P:/
    1. The .bat files must be in P:/ for Script Editor to call.
  2. Edit 'UserSettings_EDIT_ME.bat'
    1. Right-click file and choose "Edit".  View below for example
@@ -116,7 +116,7 @@ Simply double click any of these files to run them.  A shortcut for StartWorkben
 #### StartWorkbench.bat
 > This tool performs several actions:
 >  1. Kill any open Workbench application.
->  2. Generate mods.sproj with all the *.c files from our P:/MultiplayerGame
+>  2. Generate mods.sproj with all the &ast;.c files from our P:/MultiplayerGame
 >  3. Generate dayz.ssln which references mods.sproj.  Built using dayz.ssln.template file.
 >  4. Generate dayz.gproj which references unpacked mod files and our game directory. Built using dayz.gproj.template file.
 >    1. This file is copied to Workbench (PathWorkbench) folder and Game folder (P:/MultiplayerGame)
@@ -149,7 +149,7 @@ ___
    1. Modify MODS variable to add your mod name, for example: `SET "MODS=TestMod"`
    2. Note: Do not use @ for your unpacked mod folder name.  Only use @ in name for packed mods.
  3. Open Workbench using StartWorkbench.bat that should be at P:/StartWorkbench.bat
-   1. This will automatically load directories, *.c, *.layout, and *.styles files properly for game, server and workbench.
+   1. This will automatically load directories, &ast;.c, &ast;.layout, and &ast;.styles files properly for game, server and workbench.
  4. Open Script Editor from top menu Editors -> Script Editor.
  5. In Projects panel, scroll down to "mods" top level folder.
    1. All *.c files in your P:/MultiplayerGame/ directory will be listed here.
