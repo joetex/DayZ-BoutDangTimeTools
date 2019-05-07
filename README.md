@@ -126,8 +126,8 @@ Simply double click any of these files to run them.  A shortcut for StartWorkben
  <a name="copygamefiles"/>
  
 #### CopyGameFiles.bat
-> Warning: Duplicates DayZ game files (approx 14 GB)
-
+> Warning: Duplicates DayZ game files for sandbox environment (approx 14 GB)
+> Note: Only copies missing or modified files, so subsequent runs will be much faster.
 > It's important to sandbox your DayZ game directory, so your normal play is not affected.  This will move all the required files to the P:/MultiplayerGame directory.  If there is an update to DayZ Client or Server, run this tool to copy only the modified files.
   
  <a name="startstop"/>
