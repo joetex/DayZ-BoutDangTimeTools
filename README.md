@@ -74,7 +74,13 @@ ___
  1. Extract PDrive folder from *.zip file of this repository to P:/
    1. The .bat files must be in P:/ for Script Editor to call.
  2. Edit 'UserSettings_EDIT_ME.bat'
-   1. Right-click file and choose "Edit".
+   1. Right-click file and choose "Edit".  View below for example
+ 3. Edit the "MODS" value.  It is identical to the -mod format.  
+   1. Separate each mod with semi-colon.
+   2. Note: Only packed / built mods should be named with @ in front.
+ 4. Edit the paths for Workbench, DayZ Server, and DayZ Client folders.
+   1. Workbench folder is in DayZ Tools installation directory, in Bin folder
+
 ```
   REM "==================================================="
   REM "DayZ Mods to auto-load in Client, Server, and Workbench"
@@ -90,11 +96,6 @@ ___
   SET "PathDayZServer=D:/Program Files (x86)/Steam/SteamApps/common/DayZServer"
   SET "PathDayZClient=D:/Program Files (x86)/Steam/SteamApps/common/DayZ"
 ```
- 3. Edit the "MODS" value.  It is identical to the -mod format.  
-   1. Separate each mod with semi-colon.
-   2. Note: Only packed / built mods should be named with @ in front.
- 4. Edit the paths for Workbench, DayZ Server, and DayZ Client folders.
-   1. Workbench folder is in DayZ Tools installation directory, in Bin folder
 
 ___
 
