@@ -33,7 +33,9 @@ ___
       5. Kill Client and Server (Ctrl+2)
       6. Restart Client Only (Ctrl+3)
       7. Restart Server Only (Ctrl+4) 
-      8. Restart Workbench (Ctrl+0)
+      8. Copy Game Files (Ctrl+9)
+      9. Restart Workbench (Ctrl+0)
+      
 
 <a name="setup"/>
 
