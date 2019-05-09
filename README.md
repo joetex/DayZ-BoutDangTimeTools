@@ -169,5 +169,11 @@ ___
 ## Gotchas
  1. If Workbench is already open, adding new files/folders will require restarting workbench (Ctrl+0).
  2. Adding breakpoints in opened files under "mods" folder will not show the red dot next to line number.  However, Breakpoints panel will show that the breakpoint exists.  Opening the file through the traditional modules, i.e. Core, Gamelib, Game, World, and Mission will show the red dot properly.
+ 3. MapWidget and similar items with assets in DayZ Addon folder will crash with unpacked mods.  A trick around this is to pack only the config.cpp and add it to your unpacked mod's addon folder.  
+ ```
+ Example: 
+ TestMod/Addons/testmod.bin   <--- packed config.cpp 
+ TestMod/scripts/   <-- unpacked files here
+ ```
  
  
