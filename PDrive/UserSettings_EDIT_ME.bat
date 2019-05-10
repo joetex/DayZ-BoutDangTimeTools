@@ -7,6 +7,13 @@ REM "==================================================="
 REM SET "MODS=CF;VanillaPPMap"
 SET "MODS=TestMod"
 
+
+REM "==================================================="
+REM "In-game player name"
+REM "==================================================="
+SET "PlayerName=JoeOfTexas"
+
+
 REM "==================================================="
 REM "DayZ Development Environment Directories"
 REM "==================================================="
@@ -30,7 +37,7 @@ REM "==================================================="
 REM "DayZ Default Launch Parameters for Client/Server"
 REM "==================================================="
 SET ServerArgs= -server -DoLogs -noPause -port=2302 -config=serverDZ.cfg -filePatching -profiles=!Server_Instance -mod=%MODS%
-SET ClientArgs= -connect=127.0.0.1:2302 -profiles=!Client_Instance -window -name=%Author% -noPause -filePatching -dologs -password=ok -mod=%MODS% -world=%PathGame%/mpmissions/dayzOffline.chernarusplus
+SET ClientArgs= -connect=127.0.0.1:2302 -profiles=!Client_Instance -window -name=%PlayerName% -noPause -filePatching -dologs -password=ok -mod=%MODS% -world=%PathGame%/mpmissions/dayzOffline.chernarusplus
 
 
 REM "==================================================="
