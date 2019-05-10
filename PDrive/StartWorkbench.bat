@@ -4,7 +4,7 @@ setlocal enabledelayedexpansion
 REM "==================================================="
 REM "Load User Settings configuration"
 REM "==================================================="
-CALL UserSettings_EDIT_ME.bat
+CALL P:/UserSettings_EDIT_ME.bat
 
 
 REM "==================================================="

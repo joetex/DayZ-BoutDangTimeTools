@@ -30,7 +30,7 @@ REM "==================================================="
 REM "DayZ Default Launch Parameters for Client/Server"
 REM "==================================================="
 SET ServerArgs= -server -DoLogs -noPause -port=2302 -config=serverDZ.cfg -filePatching -profiles=!Server_Instance -mod=%MODS%
-SET ClientArgs= -connect=127.0.0.1:2302 -profiles=!Client_Instance -window -name=%Author% -noPause -filePatching -dologs -password=ok -mod=%MODS%
+SET ClientArgs= -connect=127.0.0.1:2302 -profiles=!Client_Instance -window -name=%Author% -noPause -filePatching -dologs -password=ok -mod=%MODS% -world=%PathGame%/mpmissions/dayzOffline.chernarusplus
 
 
 REM "==================================================="
@@ -44,7 +44,7 @@ SET ProjectModsFile=mods.sproj
 SET ProjectSolutionFile=dayz.ssln
 SET ProjectGameFile=dayz.gproj
 
-REM echo %WorkBenchMODS%
+echo %WorkBenchMODS%
 REM echo %ProjectModsFile%
 REM echo %ServerArgs%
 REM echo %ClientArgs%
