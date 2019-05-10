@@ -92,3 +92,15 @@ class CopyGameFilesDayzTool: DayZTool
 	}
 };
 
+[WorkbenchPluginAttribute("Refresh Script Editor Files", "Just for testing", "ctrl+8", "", {"ScriptEditor", "ResourceManager"})]
+class RefreshSettingsDayzTool: DayZTool
+{
+	[Attribute("P:/UserSettings_EDIT_ME.bat", "fileeditbox", "Path to missions dir", "")]
+	string RefreshSettingsCmd;
+	
+	override void Run()
+	{
+		RunCustomCommand(RefreshSettingsCmd);
+	}
+};
+
