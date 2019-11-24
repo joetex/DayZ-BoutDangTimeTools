@@ -30,7 +30,8 @@ xcopy "%PathDayZServer%\*.dll" "%PathGame%\" /D /Y /F
 xcopy "%PathDayZServer%\dayzsetting.xml" "%PathGame%\" /D /Y /F
 xcopy "%PathDayZServer%\serverDZ.cfg" "%PathGame%\" /D /Y  /F
 xcopy "%PathDayZServer%\dayz.gproj" "%PathGame%\" /D /Y  /F
-xcopy "%PathDayZServer%\mpmissions" "%PathGame%\Addons" /D /Y /I /F
+xcopy "%PathDayZServer%\mpmissions" "%PathGame%\mpmissions" /D /Y /I /F /E
+xcopy "%PathDayZServer%\BattlEye" "%PathGame%\BattlEye" /D /Y /I /F /E
 xcopy "%PathDayZServer%\Keys" "%PathGame%\Keys" /D /Y /I /F
 
 REM "==================================================="
