@@ -21,13 +21,17 @@ cd /D %PathGame%
 SET modsProjPath=%PathGame%/%ProjectModsFile%
 echo ^<^?xml version^="1.0" encoding^="UTF-8" ^?^>>!modsProjPath!
 echo ^<project^>>>%modsProjPath%
-for /r %%i in (*.c) do (
-	SET curPath=%%i
+for %%i in (!PathGame!^/%MODS:;=,!PathGame!^/%) do (
+	cd /D %%i
+
+	for /r %%i in (*.c) do (
+		SET curPath=%%i
 
 
-	SET curPath=!curPath:^\=^/!
-	SET curPath=!curPath:%PathGame%/=!
-    echo 	^<file path^=^"!curPath!^" ^/^>>>%modsProjPath%
+		SET curPath=!curPath:^\=^/!
+		SET curPath=!curPath:%PathGame%/=!
+    	echo 	^<file path^=^"!curPath!^" ^/^>>>%modsProjPath%
+	)
 )
 echo ^</project^>>>%modsProjPath%
 
