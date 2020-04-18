@@ -33,6 +33,7 @@ xcopy "%PathDayZServer%\dayz.gproj" "%PathGame%\" /D /Y  /F
 xcopy "%PathDayZServer%\mpmissions" "%PathGame%\mpmissions" /D /Y /I /F /E
 xcopy "%PathDayZServer%\BattlEye" "%PathGame%\BattlEye" /D /Y /I /F /E
 xcopy "%PathDayZServer%\Keys" "%PathGame%\Keys" /D /Y /I /F
+xcopy "P:/serverDZ.cfg" "%PathGame%\" /D /Y  /F
 
 REM "==================================================="
 REM "Copy From DayZDiag_x64.exe from DayZ Client"
